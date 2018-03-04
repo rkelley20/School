@@ -29,12 +29,6 @@ typedef struct {
 
 regex tokens("(<=>)|(T)|(F)|(~)|(=>)|(\\^)|(v)|(\\()|(\\))+\\/g");
 
-string ASTtoString(AST T);
-void checkTPE();
-void checkTokenize();
-void checkEval();
-void checkParse();
-void checkTPEOut();
 tokRslt tokenize(string s);
 bool eval(AST tree);
 TPERslt TPE(string s);
